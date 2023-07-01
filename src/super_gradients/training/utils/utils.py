@@ -592,7 +592,7 @@ def ensure_is_tuple_of_two(inputs: Union[Any, Iterable[Any], None]) -> Union[Tup
     if inputs is None:
         return None
 
-    if isinstance(inputs, collections.Iterable) and not isinstance(inputs, str):
+    if isinstance(inputs, collections.abc.Iterable) and not isinstance(inputs, str):
         a, b = inputs
         return a, b
 
